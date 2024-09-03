@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <!-- ---------------------------- ~icon---------------------------- -->
+    <!-- ---------------------------- Tab icon---------------------------- -->
     <link rel="icon" type="image/png" href="images/icons/feasty-logo.png"/>
     <!-- ---------------------------- Styles---------------------------- -->
      <link rel="stylesheet" href="styles/resets.css">
@@ -12,12 +12,12 @@
      <link rel="stylesheet" href="styles/nav.css ">
      <link rel="stylesheet" href="styles/index.css ">
     <!-- ---------------------------- Fonts---------------------------- -->
-    <!-- ---------------------------- Animations ---------------------------- -->
-     <link rel="stylesheet" href="href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"">
+    <!-- ---------------------------- icons---------------------------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
       
 </head>
 <body>
-    <nav>
+    <nav id="nav">
         <!-- Content
                     logo
                     side menu
@@ -38,7 +38,42 @@
             <span></span>
         </div>
     </nav>
-<!--     
+
+<div id="pop_nav" style="display: none;">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button id="menu-close">
+        <span class="material-symbols-outlined">
+            close
+            </span>
+
+    </button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div id="slideshow">
         <div class="slide-1">
@@ -49,7 +84,7 @@
                 <a href="menu.html">View Menu</a>
             </div>
         </div>
-        <div class="slide-2">
+        <!-- <div class="slide-2">
             <img src="images/master-slides-01.jpg">
             <div class="slide-p">
                 <p>EXPERIENCE A FEAST FOR THE SENSES</p>
@@ -68,10 +103,10 @@
                     <p>Come with family & feel the joy of mouthwatering food</p>
                 <a href="menu.html">View Menu</a>
             </div>
-        </div>
+        </div> -->
 
         <div id="tryouts">
-            <div class="tryout-1">
+            <div class="tryout t1">
                 <img src="images/blog-15.jpg" alt="pizza-tryout">
                 <div class="tryout-1-p">
                     <p>Try it today</p>
@@ -79,14 +114,14 @@
                 </div>
             </div>
             <div>
-                <div class="tryout-2">
+                <div class="tryout t2">
                     <img src="images/dinner-04.jpg" alt="pizza-tryout">
                 <div class="tryout-1-p">
                     <p>Try it today</p>
                     <p>Most Popular Pizza</p>
                 </div>
                 </div>
-                <div class="tryout-3">
+                <div class="tryout t3">
                     <img src="images/our-menu-19.jpg" alt="pizza-tryout">
                 <div class="tryout-1-p">
                     <p>Try it today</p>
