@@ -6,6 +6,8 @@
     font-family: montserrat;
 }
 
+/* imports */
+@import 'animate.css';
 a{
     text-decoration: none;
 }
