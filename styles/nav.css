@@ -11,12 +11,15 @@ nav{
     position: fixed;
     top: 0;
     z-index: 1000;
+
     
 }
 
 .logo{
     width: 130px;
     min-width: 130px;
+    animation: fadeInEntranceup 1.5s ease-out;
+
 
 }
 .logo img{
@@ -29,20 +32,25 @@ nav{
 ul{
     display: flex;
     flex-direction: row;
+    animation: fadeInEntranceup 1.5s ease-out;
+
 }
 ul li{
-    padding: 0 25px 0 0 ;
-    margin: 10px;
-    font-size: 13px;
+    font-size: 16px;
 }
 ul li a{
     color: var(--colorw);
     font-weight: 500;
     text-transform: uppercase;
+    padding: 20px;
+    margin: 5px;
 
 }
 ul li a:hover{
     font-weight: 700;
+    color: var(--colorr);
+    border-bottom: 1px solid var(--colorr);
+    border-bottom: 1px solid var(--colorr);
 }
 
 .ham{
@@ -55,6 +63,8 @@ ul li a:hover{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    animation: fadeInEntranceup 1.5s ease-out;
+
 }
 .ham:hover{
     cursor: pointer;
@@ -67,6 +77,12 @@ ul li a:hover{
     background-color: var(--colorw);
 }
 
+@media screen and (max-width: 1000px) {
+    nav{
+        padding: 20px;
+    }
+}
+ 
 @media screen and (max-width: 950px) {
     nav{
         padding: 20px;
