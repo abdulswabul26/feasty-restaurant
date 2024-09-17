@@ -1,0 +1,48 @@
+footer{
+    width: 100%;
+    height: max-content;
+    padding: 30px;
+    background-color: var(--colorrd);
+}
+footer .section_1{
+    height: max-content;
+    padding: 20px 20px 60px 20px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+footer .section_1-ttl{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--colorw);
+}
+footer .section_1-info{
+    font-size: 11px;
+    color: var(--colorw);
+}
+footer .contact-info{
+    text-align: right;
+}
+footer .opening-times :nth-child(2){
+    background-color: blue;
+}
+
+footer .section_2{
+    border-top: 1px solid var(--colorw);
+    padding: 15px 0 0 0 ;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+footer .section_2 p{
+    font-size: 13px;
+}
+footer .section_2 .socials{
+    text-align: right; 
+}
