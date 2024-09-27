@@ -8,6 +8,8 @@
 
     <!-- ---------------------------- Tab icon---------------------------- -->
     <link rel="icon" type="image/png" href="images/icons/feasty-logo.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 
 
     <!-- ---------------------------- Styles---------------------------- -->
@@ -17,7 +19,7 @@
      <link rel="stylesheet" href="styles/resets.css">
      <link rel="stylesheet" href="styles/variables.css">
      <link rel="stylesheet" href="styles/nav.css ">
-     <link rel="stylesheet" href="styles/index.css ">
+     <link rel="stylesheet" href="styles/reservation.css ">
      <link rel="stylesheet" href="styles/animation.css ">
      <link rel="stylesheet" href="styles/footer.css ">
 
@@ -48,8 +50,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="menu.html">Menu</a></li>        
-            <li><a href="gallery.html">Gallery</a></li>        
-            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="reservation.html"  style="color: var(--colorr);">Reservation</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="ham">
@@ -78,19 +79,116 @@
 
 
 
+<!-- 
+-------------------- Slideshow --------------------------
+-->
+<div id="screendisplay">
+    <img src="/images/master-slides-04.jpg" alt="">
+    <p>RESERVATION</p>
+</div>
 
 
 
 
 
 
+<!-- 
+    ------------------------ Reservation ---------------------------- 
+-->
+<div id="reservation">
+    <form action="get">
+        <div class="form-ttl">
+            <p>Reservation</p>
+            <p>book table</p>
+        </div>
+        <div class="input">
+            <label>Date</label>
+            <input type="date">
+        </div>
+        
+        <div class="input">
+            <label>Time</label>
+            <input type="time">
+        </div>
+        
+        <div class="input">
+            <label>People</label>
+            <select>
+                <option value="1">1 Person</option>
+                <option value="1">2 People</option>
+                <option value="1">3 People</option>
+                <option value="1">4 People</option>
+                <option value="1">5 People</option>
+                <option value="1">6 People</option>
+                <option value="1">7 People</option>
+                <option value="1">8 People</option>
+                <option value="1">9 People</option>
+                <option value="1">10 People</option>
+                <option value="1">11 People</option>
+                <option value="1">12 People</option>
+            </select>
+        </div>
+        <div class="input">
+            <label>Name</label>
+            <input type="text" placeholder="John Doe">
+        </div>
+        <div class="input">
+            <label>Phone</label>
+            <input type="text" placeholder="+25677*******">
+        </div>
+        <div class="input">
+            <label>Email</label>
+            <input type="email" placeholder="example@gmail.com">
+        </div>
+        <div class="submit">
+            <button>book table </button>
+        </div>
+    </form>
+    <div class="reservation-img">
+        <img src="images/blog-13.jpg" alt="">
+    </div>
+</div>
+
+<div id="reservation-info">
+    <div class="reservation-tab">
+        <p>
+            Reserve by Phone
+        </p>
+        <p>
+            Donec quis euismod purus. Donec feugiat ligula rhoncus, varius nisl sed, tincidunt lectus. Nulla vulputate , lectus vel volutpat efficitur, orci lacus sodales sem, sit amet quam: (256) 744 5753 
+        </p>
+
+    </div>
+    <div class="reservation-tab">
+        <p>
+            For Event Booking
+        </p>
+        <p>
+            Donec feugiat ligula rhoncus: (001) 345 6889 , varius nisl sed, tinci-dunt lectus sodales sem.
+        </p>
+
+    </div>
+
+
+</div>
 
 
 
 
 
+<!-- 
+    ------------------------ Specials Signup ---------------------------- 
+-->
 
-
+<div id="specials">
+    <p>Connect With Us </p>
+    <div class="special_form">
+        <form>
+            <input type="email" placeholder="Email Address">
+            <button>Sign Up</button>
+        </form>
+    </div>
+</div>
 
 
 
@@ -111,7 +209,6 @@
             <p class="section_1-info" href="index.html">Home</p>
             <p class="section_1-info" href="about.html">About</p>
             <p class="section_1-info" href="menu.html">Menu</a>        
-            <p class="section_1-info" href="gallery.html">Gallery</p>        
             <p class="section_1-info" href="reservation.html">Reservation</p>
             <p class="section_1-info" href="contact.html">Contact</p>
         </div>
@@ -149,11 +246,12 @@
     <div class="section_2">
         <p>&copy FeastyRestaurant. All Right Reserved. T&C. Privacy Policy. Cookie Policy</p>
         <div class="socials">
-            
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter-x"></i>
+            <i class="bi bi-tiktok"></i>
         </div>
     </div>
 </footer>
-
 <script src="scripts/navigation.js"></script>
     
 </body>
