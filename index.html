@@ -38,6 +38,7 @@
 
     <!-- ---------------------------- icons---------------------------- -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
       
 </head>
 <body>
@@ -56,7 +57,7 @@
             <li><a href="reservation.html">Reservation</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="ham">
+        <div class="ham" onclick="openSideMenu">
             <span></span>
             <span></span>
             <span></span>
@@ -68,11 +69,10 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="menu.html">Menu</a></li>
-        <li><a href="gallery.html">Gallery</a></li>        
         <li><a href="reservation.html">Reservation</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
-    <button id="menu-close">
+    <button id="menu-close" onclick="closeSideMenu">
         <span class="material-symbols-outlined">
             close
             </span>
@@ -104,7 +104,10 @@
         <p>Ugandan Restaurant</p>
         <p>Welcome </p>
         <p>Delight in our carefully crafted dishes, warm ambiance, and exceptional service. We're thrilled to have you here, where every meal is a special occasion. Enjoy your visit!</p>
-        <a href="about.html">Our Story</a>
+        <a href="about.html">
+            Our Story 
+            <img src="/images/icons/trending_flat.png">
+        </a>
     </div>
     <div class="intro-img">
         <img src="images/dinner-04.jpg" alt="">

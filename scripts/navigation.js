@@ -1,3 +1,53 @@
+const openMenu = document.querySelector('.ham');
+const fullScreenNav = document.querySelector('#nav');
+const popUpNav = document.querySelector('#pop_nav');
+const popUpNavclose = document.querySelector('#menu-close');
+
+openMenu.addEventListener("click", openSideMenu);
+popUpNavclose.addEventListener("click", closeSideMenu);
+
+
+// open function
+  function openSideMenu(){
+    fullScreenNav.style.display = "none";
+    popUpNav.style.display = "block";
+  }
+// close function
+function closeSideMenu(){
+  fullScreenNav.style.display = "flex";
+  popUpNav.style.display = "none";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // NAvigation Scroll Effect
 document.addEventListener("DOMContentLoaded", function() {
     // Select the navigation bar
