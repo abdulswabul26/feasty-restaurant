@@ -177,13 +177,18 @@ body{
 @media screen and (max-width: 970px) {
     #intro-container{
         width: 100%;
-        height: 800px;
+        height: max-content;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 1fr;
         grid-column-gap: 0px;
         grid-row-gap: 100px;
         padding: 100px;
+
+    }
+    .intro-text{
+        height: max-content;
+        width: 100%;
     }
     .intro-text :nth-child(1){
         color: var(--colorrd);
@@ -208,6 +213,12 @@ body{
         font-size:  2.5vw;
         padding: 20px;
     }
+    .intro-img{
+        background-color: blue;
+        border-radius: 25px;
+        overflow: hidden;
+        display: none;
+        }
 }
 
 
@@ -262,8 +273,9 @@ body{
 */
 #ads{
     width: 100%;
-    height: 600px;
-    padding: 10px 10px 50px 10px;
+    height: max-content;
+    padding: 10px 10px 10px 10px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -353,14 +365,15 @@ body{
 
 @media screen and (max-width: 970px) {
     #ads{
-        height: 1500px;
+        height: max-content;
+        padding: 50px;
     }
     .tryouts{
         width: 60%;
         height: 80%;
         display: grid;
         grid-template-columns: 1fr;    
-        grid-template-rows:repeat(4, 1fr);
+        grid-template-rows:repeat(3, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 50px;
     }
@@ -494,19 +507,113 @@ form .submit{
     #reservation{
         width: 100%;
         height: max-content;
-        /* background-color: red; */
+        padding: 100px 0px;
     
-        display: grid;      
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: 1fr;
-        grid-column-gap: 100px;
-    
+        display: flex;    
         justify-content: center;
         align-items: center;
+
+        position: relative;
     }
+    #reservation form{
+        width: 70%;
+        padding: 10px;
+        border-radius: 25px;
+        padding: 30px;
+    
+        display: flex;
+        flex-direction: column;
 
-}
-
+    }
+    #reservation form .input{
+        display: flex;
+        flex-direction: column;
+    }
+    .input label{
+        padding: 10px 10px 5px 0;
+        color: var(--colorb);
+    }
+    .input input, select{
+        width: 100%;
+        padding: 10px;
+        box-shadow: 1px 1px 4px 1px var(--colorwd);
+        border-radius: 10px;
+        overflow: hidden;
+        border: none;
+        outline: none;
+    }
+    .input input:focus ,select:focus{
+        outline: 2px solid var(--colorr);
+    }
+    
+    form .form-ttl{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+     
+        grid-area: 1 / 1 / 2 / 3 ;
+    }
+    form .form-ttl :nth-child(1){
+        font-size: 6vw;
+        font-weight: 500;
+        font-style: italic;
+        color: var(--colorrd);
+        font-family: sofia;
+    }
+    form .form-ttl :nth-child(2){
+        font-size: 7vw;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-family: 'Times New Roman';
+        letter-spacing: 5px;
+        color: var(--colorb);
+    }
+    form .submit{
+        /* background-color: green; */
+        grid-area: 5/1/5/3;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .submit button{
+        width: 100%;
+        padding: 10px 20px;
+        border: 1px solid var(--colorr);
+        border-radius: 10px;
+        text-transform: uppercase;
+        background-color: transparent;
+        color: var(--colorr);
+        font-size: 3vw;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .submit button:hover{
+        transform: scale(1.03);
+        background-color: var(--colorr);
+        color: var(--colorw);
+    
+    }
+    #reservation .reservation-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: red;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+        border-radius: 0;
+        display: none;
+    }
+    .reservation-img img{
+        height: 100%;
+    }
+    .reservation-img:hover img{
+        transform: scale(1.1);
+    }
 /* ======================================================
                      VIDEO
 ======================================================
@@ -603,13 +710,13 @@ form .submit{
     
 }
 .cust_rev_ttl_1{
-    font-size: 2.5vw;
+    font-size: 4vw;
     color: var(--colorr);
     font-style: italic;
     font-family: sofia;
 }
 .cust_rev_ttl_2{
-    font-size: 4vw;
+    font-size: 6vw;
     text-transform: uppercase;
     font-weight: 800;
     font-family: 'Times New Roman';
@@ -630,8 +737,8 @@ form .submit{
 }
 
 .cust_img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border: 3px solid var(--colorr);
     border-radius: 50%;
     margin: 0 10px;
@@ -639,7 +746,8 @@ form .submit{
 
 .cust_review{
     margin: 20px;
-    font-size: 18px;
+    width: 300px;
+    font-size: 15px;
 }
 .cust_rating{
     width: max-content;
@@ -783,4 +891,5 @@ form .submit{
 }
 #specials form button:hover{
     background-color: var(--colorr);
+}
 }
