@@ -67,6 +67,8 @@
     padding: 50px 25px;
     justify-content: center;
     align-items: center;
+    /* position: sticky;
+    top: 50px; */
 }
 .menu-types ul li{
     padding: 10px 20px;
@@ -96,6 +98,33 @@
     justify-content: center;
     align-items: center;
 }
+
+/* For tablets */
+@media (max-width: 768px) {
+    #menu-tabs {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+/* For mobile */
+@media (max-width: 480px) {
+    #menu-tabs {
+        grid-template-columns: 1fr; /* One column on small mobile screens */
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 .menu_tab{
     display: flex;
     flex-direction: row;
@@ -270,26 +299,10 @@
     padding: 60px;
     position: relative;
 }
-.specials-img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    z-index: -2;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-}
-.specials-img img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
+
 #specials p{
     font-size: 2vw;
-    color: var(--colorw);
+    color: var(--colorb);
     font-weight: 600;
     font-size: 2.5vw;
     padding: 0 0px 20px 0px;
@@ -297,14 +310,14 @@
 #specials form{
     display: flex;
     flex-direction: row;
-    background-color: rgb(247, 242, 236);
-    box-shadow: 1px 1px 5px;
-    border-radius: 25px;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+
 }
 #specials form input{
     width: 300px;
-    padding: 10px;
-    margin: 10px;
+    padding: 10px 0px 10px 5px;
+    margin: 10px 10px 0 0px;
     background-color: transparent;
     border: none;
     outline: none;
@@ -312,16 +325,16 @@
 
 #specials form button{
     width: max-content;
-    padding: 10px;
-    margin: 10px;
+    padding: 10px 5px 10px 10px;
+    margin: 10px 0px 0 10px;
     background-color: transparent;
     border: none;
-    background-color: var(--colorwd);
+    /* background-color: var(--colorwd); */
     border-radius: 25px;
     font-weight: 600;
-    color: var(--colorw);
+    color: var(--colorb);
 
 }
 #specials form button:hover{
-    background-color: var(--colorr);
+    color: var(--colorr);
 }
